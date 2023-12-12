@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TOKEN =
-  "8cnhRTs-VGVNYkGIm82bVO_X-X78HGaOydsI2AFMci8r8TeH448Ph0NhjtNqn0fn";
+const TOKEN = import.meta.env.VITE_GENIUS_TOKEN;
 
 async function fetchSong(songId) {
   const response = await fetch(`/api/songs/${songId}`, {
